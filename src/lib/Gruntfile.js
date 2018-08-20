@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ["../index.html", "../scripts/**/*.js", "../styles/**/*.css", "!node_modules/**/*.js"],
-                tasks: ["eslint", "browserify", "uglify", "copy"],
+                tasks: ["eslint", "browserify", "copy"],
                 options: {
                     spawn: false,
                 },
@@ -56,10 +56,9 @@ module.exports = function(grunt) {
             }
         }
     });
-    grunt.loadNpmTasks("grunt-contrib-uglify-es");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-eslint");
     grunt.loadNpmTasks("grunt-browserify");
-    grunt.registerTask("default", ["eslint", "browserify", "uglify", "copy", "watch"]);
+    grunt.registerTask("default", ["eslint", "browserify", "copy", "watch"]);
 };
