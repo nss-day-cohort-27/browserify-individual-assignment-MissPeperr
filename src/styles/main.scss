@@ -4,27 +4,32 @@
 @import "../lib/node_modules/bootstrap/scss/_mixins.scss";
 @import "../lib/node_modules/bootstrap/scss/bootstrap.scss";
 
-body {
-    background-color: var(--blue);
-}
-
-.card {
-    max-width: 25rem;
-    min-width: 10rem;
-    display: flex;
-    flex-wrap: row;
-}
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-header h4 {
-    margin: 0 1em 0 0;
-}
 
 #places-form {
     display: flex;
     justify-content: space-evenly;
 }
+
+#list-places-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 20rem;
+    min-width: 20rem;
+    display: flex;
+    flex-wrap: row;
+    .card-header {
+        background-color: var(--success);
+        display: flex;
+        justify-content: space-between;
+        h4 {
+            color: var(--white);
+            margin: 0 2em 0 0;
+        }
+    }
+}
+
+

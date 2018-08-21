@@ -19,7 +19,7 @@ $("body").click((event)=>{
         .then(()=>{
             $("#new-place-input").val("");
             $("#new-location-input").val("");
-            $("#list-places-container").val("");
+            $("#list-places-container").html("");
             renderPlacesList.getPlaces();
         })
     }

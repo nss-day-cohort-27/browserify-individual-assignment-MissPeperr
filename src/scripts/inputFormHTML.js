@@ -39,7 +39,7 @@ const inputFormHTML = () => {
     </div>
     
     `
-    $("#main-content").append(formHTML);
+    $("#main-content").prepend(formHTML);
 }
 
 module.exports = inputFormHTML;
