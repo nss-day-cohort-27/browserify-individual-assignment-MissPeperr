@@ -1,1 +1,39 @@
-@import "~bootstrap/scss/bootstrap.scss";
+@import "../lib/node_modules/bootstrap/scss/_functions.scss";
+@import "../lib/node_modules/bootstrap/scss/_variables.scss";
+@import "../lib/node_modules/bootstrap/scss/_root.scss";
+@import "../lib/node_modules/bootstrap/scss/_mixins.scss";
+@import "../lib/node_modules/bootstrap/scss/bootstrap.scss";
+
+
+#places-form {
+    display: flex;
+    justify-content: space-evenly;
+    #new-place-button {
+        background-color: var(--indigo);
+        color: var(--white);
+    }
+}
+
+#list-places-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 20rem;
+    min-width: 20rem;
+    display: flex;
+    flex-wrap: row;
+    .card-header {
+        background-color: var(--success);
+        display: flex;
+        justify-content: space-between;
+        h4 {
+            color: var(--white);
+            margin: 0 2em 0 0;
+        }
+    }
+}
+
+

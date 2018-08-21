@@ -1,4 +1,5 @@
 const $ = require("jquery");
+const B = require("bootstrap");
 const placesData = require("DataManager");
 const placesInput = require("inputFormHTML");
 const renderPlacesList = require("renderPlacesList");
@@ -18,7 +19,7 @@ $("body").click((event)=>{
         .then(()=>{
             $("#new-place-input").val("");
             $("#new-location-input").val("");
-            $("#list-places-container").val("");
+            $("#list-places-container").html("");
             renderPlacesList.getPlaces();
         })
     }

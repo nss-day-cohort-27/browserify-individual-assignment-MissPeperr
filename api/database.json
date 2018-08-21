@@ -1,0 +1,58 @@
+{
+  "places": [
+    {
+      "name": "Disneyland",
+      "location": "Anaheim, CA",
+      "image": "https://secure.cdn1.wdpromedia.com/resize/mwImage/1/640/360/75/dam/wdpro-assets/dlr/gallery/destinations/disneyland-park/disneyland-gallery00.jpg?1504908934350",
+      "id": 1
+    },
+    {
+      "name": "DisneyWorld",
+      "location": "Orlando, FL",
+      "image": "http://www.wdwinfo.com/Photos/600-spaceship-earth3.jpg",
+      "id": 2
+    },
+    {
+      "name": "Holiday World",
+      "location": "Santa Claus, IN",
+      "image": "https://radiocms-images.us1.eldarioncloud.com/resize/750/https://storage.googleapis.com/media.mwcradio.com/flatterpages/HW-2018-main-1500.jpg",
+      "id": 3
+    },
+    {
+      "name": "Six Flags Magic Moutain",
+      "location": "Santa Clarita, CA",
+      "image": "https://mynewsla.com/wp-content/uploads/2014/09/MNLA_FilePhotos_PasadenaValley_0020-e1503513592471.jpg",
+      "id": 5
+    },
+    {
+      "name": "Six Flags Discovery Kingdom",
+      "location": "Vallejo, CA",
+      "image": "https://antiboredkids.files.wordpress.com/2011/04/2515699126_099fbf13ef.jpg",
+      "id": 6
+    },
+    {
+      "name": "San Antonio",
+      "location": "Texas",
+      "image": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/images/heros/Station_SanAntonio_HeroBanner_3.jpg/_jcr_content/renditions/cq5dam.web.2125.1195.jpeg",
+      "id": 7
+    },
+    {
+      "name": "Adventure Science Center",
+      "location": "Nashville, TN",
+      "image": "https://www.gannett-cdn.com/-mm-/262ede8db922ebf9fe1199fb502e23a23a88e9d4/c=50-0-1816-1328/local/-/media/2017/04/25/TennGroup/Nashville/636287258165846335-Playtime-04.JPG?width=534&height=401&fit=crop",
+      "id": 8
+    },
+    {
+      "name": "The Grand Canyon",
+      "location": "Coconino Country, AZ",
+      "image": "https://www.advantagegrandcanyon.com/wp-content/uploads/2015/01/where-is-the-grand-canyon.png",
+      "id": 9
+    },
+    {
+      "name": "Nashville",
+      "location": "Tennessee",
+      "image": "http://www.chattanoogaskydivingcompany.com/images/city/Skydiving-Nashville.jpg",
+      "id": 10
+    }
+  ]
+}

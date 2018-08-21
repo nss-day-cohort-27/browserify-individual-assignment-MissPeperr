@@ -1,4 +1,6 @@
 const $ = require("jquery");
+const B = require("bootstrap");
+
 
 const inputFormHTML = () => {
     const formHTML =
@@ -37,7 +39,7 @@ const inputFormHTML = () => {
     </div>
     
     `
-    $("#main-content").append(formHTML);
+    $("#main-content").prepend(formHTML);
 }
 
 module.exports = inputFormHTML;
