@@ -1,4 +1,5 @@
 const $ = require("jquery");
+const B = require("bootstrap");
 const placesData = require("DataManager");
 const placesInput = require("inputFormHTML");
 const renderPlacesList = require("renderPlacesList");

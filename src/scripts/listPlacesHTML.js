@@ -1,5 +1,5 @@
 const $ = require("jquery");
-
+const B = require("bootstrap");
 const listPlacesHTML = (placeID, name, location, image) => {
     const placesHTML =
     `

@@ -7,8 +7,13 @@ module.exports = function(grunt) {
                 tasks: ["eslint", "browserify", "copy"],
                 options: {
                     spawn: false,
-                },
-            }
+                }
+               
+            },
+            sass: {
+                files: ["../styles/**/*.scss"],
+                tasks: ["sass"]
+              }
         },
         browserify: {
             options: {
@@ -37,17 +42,19 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        sass: {
+            dist: {
+              files: {
+                "../../dist/styles/main.css": "../styles/main.scss"
+              }
+            }
+          },
         eslint: {
             src: ["../scripts/**/*.js", "!node_modules/**/*.js"]
         },
         copy: {
             main: {
                 files: [{
-                    expand: true,
-                    cwd: "..",
-                    src: "./styles/*",
-                    dest: "../../dist/"
-                }, {
                     expand: true,
                     cwd: "..",
                     src: "./index.html",
@@ -59,6 +66,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-eslint");
+    grunt.loadNpmTasks("grunt-contrib-sass");
     grunt.loadNpmTasks("grunt-browserify");
-    grunt.registerTask("default", ["eslint", "browserify", "copy", "watch"]);
+    grunt.registerTask("default", ["eslint", "browserify", "sass", "copy", "watch"]);
 };

@@ -1,4 +1,6 @@
 const $ = require("jquery");
+const B = require("bootstrap");
+
 
 const inputFormHTML = () => {
     const formHTML =
