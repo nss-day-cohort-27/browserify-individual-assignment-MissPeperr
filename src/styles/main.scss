@@ -8,6 +8,10 @@
 #places-form {
     display: flex;
     justify-content: space-evenly;
+    #new-place-button {
+        background-color: var(--indigo);
+        color: var(--white);
+    }
 }
 
 #list-places-container {
